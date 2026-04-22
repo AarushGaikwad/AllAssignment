@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 02-Q3</title>
+    <style>
+      body {
+            margin: 0;
+            padding: 20px;
+          }
+
+      .container {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+          }
+
+      img {
+          display: flexbox;
+          margin: auto;
+          width: 50%;
+      }
+
+      iframe {
+          width: 500px;
+          height: 230px;
+      }
+
+      form {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+      }
+
+    </style>
+</head>
+<body>
+    
+    <center>
+    <img src="https://www.sunbeaminfo.com/img/new/sunbeamnewactslogo.png">
+    </center>
+
+    <div class="container">
+    
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/SEW_uUm4jn8"></iframe>
+    </div>
+
+    <form>
+       <div>
+        <label for="name">Name</label>
+        <input
+          placeholder="name here"
+          type="text"
+          name="name"
+          id="name" />
+      </div>
+      <div>
+        <label for="Date">Date</label>
+        <input type="date">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input placeholder="Email" type="email" name="email" id="email">
+      </div>
+      <div>
+        <label for="password">password</label>
+        <input type="password" placeholder="password">
+      </div>
+      <div>
+        <label for="Address">Address</label>
+        <textarea placeholder="Address" name="" id=""></textarea>
+      </div>
+      <div>
+        <label for="">Gender</label>
+        <input
+          type="radio"
+          name="gender"
+          id="gender_male" />
+            Male
+        <input
+          type="radio"
+          name="gender"
+          id="gender_female" />
+            Female
+      </div>
+      <div>
+        <label for="">Upload Photo:</label>
+        <input type="file" name="" id="">
+      </div>
+      <div>
+        <label for="">Select your Course</label>
+        <select  name="" id="">
+            <option value="1">DMC</option>
+            <option value="2">DAC</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Skill set</label>
+        <input type="checkbox">JAVA
+        <input type="checkbox">CPP
+        <input type="checkbox">OS
+      </div>
+      <div>
+        <button>Register</button>
+        <button>Clear</button>
+      </div>
+    </form>
+
+</div>
+    
+    
+   
+</body>
+</html>

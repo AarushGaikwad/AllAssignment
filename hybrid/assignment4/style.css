@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: rgb(128, 128, 128);
+}
+
+.topcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.utilitybar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: hsl(0, 0%, 70%);
+    height: 5rem;
+    width: 50%;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding: 0 1rem; 
+}
+
+.appname{
+    color: white;
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+    font-family: 'Times New Roman';
+}
+
+.appname h5,h6 {
+    font-weight: bolder;
+    margin: 0;
+}
+
+.icongroup {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+.actionicons {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* instead of padding */
+}
+
+.actionicons img{
+    height: 30px;
+    width: 30px;
+    margin-right:1rem;
+}
+
+
+.sideicons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.donatebutton {
+    background-color: rgb(15, 171, 243);
+    border: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sideicons img{
+    
+    height: 30px;
+    width: 30px;
+    margin-right: 0.5rem;
+}
+
+.sideicons button{
+    background-color: rgb(15, 171, 243);
+}
+
+.note{
+    margin-top: 5rem;
+    border: whitesmoke solid 0.5rem;
+    border-radius: 0.25rem;
+    height: 17rem;
+    width: 14rem;
+    position: relative;
+    background-color: #f0f0f0;
+    box-shadow: inset;
+}
+
+.note-pin {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    z-index: 10;
+}
+
+.note-cancel {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.note img{
+    height: 35px;
+    width: 35px;
+    vertical-align: middle;
+}
+
+.note textarea{
+    position: absolute;
+    top: 4rem;
+    left:1.5rem;
+    width: 10rem;
+    height: 10rem;
+    z-index: 10;
+    background: transparent;
+    border: none;
+}
+
+.note h2{
+    position: absolute;
+    margin-top: 1rem;
+    padding: 0.5rem; 
+    font-size: medium;
+}
+
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-items: center; 
+    margin-top: 3rem;
+}
